@@ -203,19 +203,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**Hasintha01**
-- GitHub: [@Hasintha01](https://github.com/Hasintha01)
-- Repository: [MERN-Testing](https://github.com/Hasintha01/MERN-Testing)
-
-## 🎯 Next Steps
-
-- [ ] Add user authentication
-- [ ] Implement CRUD operations
-- [ ] Add more API endpoints
-- [ ] Integrate with MongoDB
-- [ ] Add unit tests
-- [ ] Deploy to production
-
----
-
-**Happy Coding! 🚀**
+**Hasintha Pasindu**
