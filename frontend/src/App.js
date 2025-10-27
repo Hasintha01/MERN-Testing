@@ -51,13 +51,7 @@ function App() {
         maxWidth: '800px',
         width: '100%'
       }}>
-        <div style={{ 
-          background: 'rgba(255,255,255,0.1)', 
-          padding: '30px', 
-          borderRadius: '15px',
-          border: '1px solid rgba(255,255,255,0.2)',
-          backdropFilter: 'blur(10px)'
-        }}>
+        <div className="glass">
           <h3 style={{ 
             fontSize: '1.5rem', 
             marginBottom: '20px',
@@ -73,13 +67,7 @@ function App() {
           </div>
         </div>
         
-        <div style={{ 
-          background: 'rgba(255,255,255,0.1)', 
-          padding: '30px', 
-          borderRadius: '15px',
-          border: '1px solid rgba(255,255,255,0.2)',
-          backdropFilter: 'blur(10px)'
-        }}>
+        <div className="glass">
           <h3 style={{ 
             fontSize: '1.5rem', 
             marginBottom: '20px',
@@ -96,13 +84,11 @@ function App() {
         </div>
       </div>
       
-      <div style={{ 
+      <div className="glass-pill" style={{
         marginTop: '40px',
-        padding: '15px 30px',
-        background: 'linear-gradient(45deg, #ff6b6b, #4ecdc4)',
-        borderRadius: '50px',
         fontWeight: 'bold',
-        fontSize: '1.1rem'
+        fontSize: '1.1rem',
+        color: '#fff'
       }}>
         🎉 MERN Stack Ready!
       </div>
