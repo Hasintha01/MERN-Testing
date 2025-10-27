@@ -1,7 +1,15 @@
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [noiseEnabled, setNoiseEnabled] = useState(false);
+
+  useEffect(() => {
+    if (noiseEnabled) document.documentElement.classList.add('enable-noise');
+    else document.documentElement.classList.remove('enable-noise');
+  }, [noiseEnabled]);
+
   return (
     <div className="App" style={{ 
       minHeight: '100vh', 
@@ -13,6 +21,13 @@ function App() {
       color: 'white',
       textAlign: 'center'
     }}>
+      {/* Noise toggle (optional) */}
+      <div style={{ position: 'absolute', top: 14, right: 18, zIndex: 11000, color: '#cbd5e1' }}>
+        <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.9rem' }}>
+          <input type="checkbox" checked={noiseEnabled} onChange={e => setNoiseEnabled(e.target.checked)} />
+          <span style={{ opacity: 0.9 }}>Noise</span>
+        </label>
+      </div>
       <img 
         src={logo} 
         className="App-logo" 
