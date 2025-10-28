@@ -4,11 +4,20 @@ import './App.css';
 
 function App() {
   const [noiseEnabled, setNoiseEnabled] = useState(false);
+  const [frontendModalOpen, setFrontendModalOpen] = useState(false);
 
   useEffect(() => {
     if (noiseEnabled) document.documentElement.classList.add('enable-noise');
     else document.documentElement.classList.remove('enable-noise');
   }, [noiseEnabled]);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape' && frontendModalOpen) setFrontendModalOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [frontendModalOpen]);
 
   return (
     <div className="App" style={{ 
@@ -66,7 +75,7 @@ function App() {
         maxWidth: '800px',
         width: '100%'
       }}>
-        <div className="glass">
+        <div className="glass" onClick={() => setFrontendModalOpen(true)} style={{ cursor: 'pointer' }} role="button" aria-haspopup="dialog" aria-expanded={frontendModalOpen}>
           <h3 style={{ 
             fontSize: '1.5rem', 
             marginBottom: '20px',
@@ -107,6 +116,29 @@ function App() {
       }}>
         🎉 MERN Stack Ready!
       </div>
+
+      {/* Modal for Frontend details */}
+      {frontendModalOpen && (
+        <div className="modal-overlay" onClick={() => setFrontendModalOpen(false)}>
+          <div className="modal" role="dialog" aria-modal="true" aria-label="Frontend status details" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" aria-label="Close details" onClick={() => setFrontendModalOpen(false)}>×</button>
+            <h2>⚛️ Frontend Status — Details</h2>
+            <div className="modal-body">
+              <div className="detail-line"><strong>✅ React App Running</strong></div>
+              <div className="detail-line">Your frontend is powered by React, a modern JavaScript library for building dynamic user interfaces. The app is successfully running, confirming that the React environment and development server are properly configured.</div>
+
+              <div className="detail-line"><strong>✅ Axios Installed</strong></div>
+              <div className="detail-line">Axios is ready for use — this HTTP client allows your frontend to communicate seamlessly with the backend server or external APIs through GET, POST, and other request types.</div>
+
+              <div className="detail-line"><strong>✅ React Router Installed</strong></div>
+              <div className="detail-line">React Router handles navigation between pages without reloading the browser. This ensures smooth transitions and a single-page application (SPA) experience for users.</div>
+
+              <div className="detail-line"><strong>✅ Styling Applied</strong></div>
+              <div className="detail-line">Custom or framework-based styling (e.g., CSS, Tailwind, Bootstrap, etc.) has been successfully implemented, ensuring that your frontend components look polished and responsive across devices.</div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
