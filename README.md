@@ -2,28 +2,28 @@
 
 A full-stack MERN (MongoDB, Express.js, React.js, Node.js) application for testing and development purposes.
 
-## 🚀 Project Overview
+## Project Overview
 
 This project demonstrates a complete MERN stack setup with a React frontend and Express backend. It features a beautiful testing page that displays the project status and serves as a foundation for further development.
 
-## 📋 Features
+## Features
 
 ### Frontend (React)
-- ✅ Custom React application with beautiful UI
-- ✅ Gradient backgrounds and modern styling
-- ✅ Status display cards for frontend and backend
-- ✅ Responsive design
-- ✅ Axios for API requests
-- ✅ React Router for navigation
+- Custom React application with beautiful UI
+- Gradient backgrounds and modern styling
+- Status display cards for frontend and backend
+- Responsive design
+- Axios for API requests
+- React Router for navigation
 
 ### Backend (Express/Node.js)
-- ✅ Express.js server with CORS enabled
-- ✅ MongoDB integration ready (Mongoose)
-- ✅ Environment variable support (.env)
-- ✅ Development mode with Nodemon
-- ✅ RESTful API structure ready
+- Express.js server with CORS enabled
+- MongoDB integration ready (Mongoose)
+- Environment variable support (.env)
+- Development mode with Nodemon
+- RESTful API structure ready
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Frontend:**
 - React.js
@@ -39,7 +39,7 @@ This project demonstrates a complete MERN stack setup with a React frontend and 
 - Dotenv
 - Nodemon (development)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 my-mern-app/
@@ -61,7 +61,7 @@ my-mern-app/
 └── README.md              # This file
 ```
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -92,7 +92,7 @@ cd frontend
 npm install
 ```
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Start Backend Server
 ```bash
@@ -108,13 +108,13 @@ npm start
 ```
 Frontend will run on: `http://localhost:3000`
 
-## 📊 Application URLs
+## Application URLs
 
 - **Frontend**: http://localhost:3000
 - **Backend API**: http://localhost:5000
 - **API Test Endpoint**: http://localhost:5000/ (returns server status)
 
-## 🎨 Features Showcase
+## Features Showcase
 
 The application includes:
 
@@ -124,7 +124,7 @@ The application includes:
 4. **Responsive Design**: Works on desktop and mobile devices
 5. **Development Ready**: Hot-reload enabled for both frontend and backend
 
-## 🔧 Development
+## Development
 
 ### Available Scripts
 
@@ -143,7 +143,7 @@ The application includes:
 2. **Backend Routes**: Create new API routes in `backend/routes/`
 3. **Database Models**: Add Mongoose models in `backend/models/`
 
-## 🌐 Environment Variables
+## Environment Variables
 
 ### Backend (.env)
 ```env
@@ -152,7 +152,7 @@ MONGO_URI=mongodb://localhost:27017/mern-testing
 NODE_ENV=development
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature-name`
@@ -160,7 +160,7 @@ NODE_ENV=development
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request
 
-## 📝 API Endpoints
+## API Endpoints
 
 ### Current Endpoints
 
@@ -176,7 +176,7 @@ NODE_ENV=development
 | POST   | /api/data | Create new data |
 | GET    | /api/data | Get all data |
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -197,25 +197,15 @@ NODE_ENV=development
    npm install
    ```
 
-## 📄 License
+## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
-## 👨‍💻 Author
+## Contact
 
-**Hasintha01**
-- GitHub: [@Hasintha01](https://github.com/Hasintha01)
-- Repository: [MERN-Testing](https://github.com/Hasintha01/MERN-Testing)
+**Hasintha Pasindu**
 
-## 🎯 Next Steps
-
-- [ ] Add user authentication
-- [ ] Implement CRUD operations
-- [ ] Add more API endpoints
-- [ ] Integrate with MongoDB
-- [ ] Add unit tests
-- [ ] Deploy to production
-
----
-
-**Happy Coding! 🚀**
+- **Website**: [hasinthapasindu.me](https://hasinthapasindu.me)
+- **Email**: Hasinthapasindu20@gmail.com
+- **LinkedIn**: [linkedin.com/in/hasintha-pasindu](https://linkedin.com/in/hasintha-pasindu)
+- **GitHub**: [@Hasintha01](https://github.com/Hasintha01)
